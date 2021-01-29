@@ -26,7 +26,7 @@ def index():
     return render_template("covid-19-index.html")
 
 
-@app.route("/covid/upload-image", methods=['GET', 'POST'])
+@app.route("/covid", methods=['GET', 'POST'])
 def image_upload():
     file = request.files['image']
     if request.method == "POST":
