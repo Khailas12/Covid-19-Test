@@ -21,7 +21,7 @@ def covid_prediction(image_test):
     return label[all_classes[0][0]]
 
 
-@app.route("/covid")
+@app.route("/")
 def index():
     return render_template("covid-19-index.html")
 
